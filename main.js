@@ -1,4 +1,4 @@
-import { Root } from "./Root.js";
+import { Root } from "./components/Root.js";
 
 const { mount } = owl;
 
