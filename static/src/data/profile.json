@@ -3,8 +3,8 @@
     "hero": {
         "title": "Hola 👋, Soy <span class=\"font-semibold text-yellow-500\">Jorge Alberto Quiroz</span>",
         "subtitle": "Ingeniero de sistemas con sólida experiencia en desarrollo web, especializado en <span class=\"font-semibold text-yellow-500\">Python 🐍 y experto en Odoo ERP 📦.</span> Me apasiona resolver problemas complejos con código limpio y eficiente. Ayudo a empresas a automatizar y escalar sus procesos con tecnología eficiente, limpia y bien documentada. Domino PostgreSQL, Docker y despliegue en la nube ☁️ para entregar soluciones robustas, escalables y alineadas al negocio.",
-        "image": "/portfolio/static/image/foto.jpg",
-        "file": "/portfolio/static/files/Jorge.pdf"
+        "image": "./static/src/image/foto.jpg",
+        "file": "./static/src/files/Jorge.pdf"
     },
     "aboutMe": {
         "title": "Desarrollador Fullstack | Especialista en <span class=\"font-semibold text-yellow-500\">Odoo ERP y Python 🐍</span>",
