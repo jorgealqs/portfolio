@@ -12,12 +12,12 @@ export class Hero extends Component {
                     <t t-out="hero.subtitle"/>
                 </p>
                 <div class="flex flex-col md:flex-row items-center gap-4">
-                    <a t-att-href="hero.file"
-                        class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition shadow-md">
+                    <a t-att-href="hero.file" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition shadow-md flex items-center gap-2">
+                        <i class="bi bi-download"></i>
                         Descargar CV
                     </a>
-                    <a href="#contact"
-                        class="border-2 border-yellow-400 px-6 py-2 rounded-full font-semibold text-yellow-500 hover:bg-yellow-50 transition">
+                    <a href="#contact" class="border-2 border-yellow-400 px-6 py-2 rounded-full font-semibold text-yellow-500 hover:bg-yellow-50 transition flex items-center gap-2">
+                        <i class="bi bi-envelope-paper"></i>
                         Contáctame
                     </a>
                 </div>

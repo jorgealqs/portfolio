@@ -1,8 +1,8 @@
 const { Component, useState, onWillStart, xml } = owl;
 
+import { Navbar } from "./Navbar.js";
 import { Hero } from "./Hero.js";
 import { About } from "./About.js";
-import { Navbar } from "./Navbar.js";
 import { Projects } from "./Projects.js";
 import { Contact } from "./Contact.js";
 import { Footer } from "./Footer.js";

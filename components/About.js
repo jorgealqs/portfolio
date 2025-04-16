@@ -7,7 +7,10 @@ export class About extends Component {
 
             <!-- Columna izquierda -->
             <div data-aos="fade-right">
-                <h2 class="text-5xl font-extrabold text-gray-900 mb-4">Sobre mí</h2>
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+                    <i class="bi bi-person-circle text-yellow-500 text-4xl"></i>
+                    Sobre mí
+                </h2>
                 <p class="text-xl text-gray-700 font-medium mb-6">
                     <t t-out="about.title"/>
                 </p>

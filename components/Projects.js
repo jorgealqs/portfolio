@@ -7,7 +7,9 @@ export class Projects extends Component {
 
     static template = xml`
         <section class="max-w-7xl mx-auto px-6 py-14" id="projects">
-            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Proyectos</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+            <i class="bi bi-folder2-open text-gray-600"></i> Proyectos
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <t t-foreach="props.projects" t-as="project" t-key="project.title">
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
@@ -25,12 +27,12 @@ export class Projects extends Component {
                             </div>
                             <div class="mt-auto flex flex-wrap gap-3">
                                 <a t-if="project.link" t-att-href="project.link" target="_blank"
-                                    class="inline-block bg-yellow-500 px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-yellow-600 transition">
-                                    Ver más
+                                    class="inline-block bg-yellow-500 px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-yellow-600 transition flex items-center gap-2">
+                                    <i class="bi bi-box-arrow-up-right"></i> Ver más
                                 </a>
                                 <a t-if="project.github" t-att-href="project.github" target="_blank"
-                                    class="inline-block border border-gray-300 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition">
-                                    GitHub
+                                    class="inline-block border border-gray-300 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition flex items-center gap-2">
+                                    <i class="bi bi-github"></i> GitHub
                                 </a>
                             </div>
                         </div>

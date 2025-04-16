@@ -4,7 +4,8 @@ export class Navbar extends Component {
     static template = xml`
     <nav class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300" t-att-class="state.scrolled ? 'py-2' : 'py-4'">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300">
-            <a href="#" class="text-2xl font-bold text-yellow-500 transition-all duration-300">
+            <a href="#" class="text-2xl font-bold text-yellow-500 flex items-center gap-2 transition-all duration-300">
+                <i class="bi bi-lightning-charge-fill"></i>
                 <t t-esc="props.name"/>
             </a>
 
@@ -13,12 +14,13 @@ export class Navbar extends Component {
             </button>
 
             <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
-                <li><a href="#hero" class="hover:text-yellow-500 transition">Inicio</a></li>
-                <li><a href="#about" class="hover:text-yellow-500 transition">Sobre mí</a></li>
-                <li><a href="#projects" class="hover:text-yellow-500 transition">Proyectos</a></li>
-                <li><a href="#contact" class="hover:text-yellow-500 transition">Contacto</a></li>
+                <li><a href="#hero" class="hover:text-yellow-500 transition flex items-center gap-2"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="#about" class="hover:text-yellow-500 transition flex items-center gap-2"><i class="bi bi-person-lines-fill"></i> Sobre mí</a></li>
+                <li><a href="#projects" class="hover:text-yellow-500 transition flex items-center gap-2"><i class="bi bi-kanban"></i> Proyectos</a></li>
+                <li><a href="#contact" class="hover:text-yellow-500 transition flex items-center gap-2"><i class="bi bi-envelope-at"></i> Contacto</a></li>
                 <li>
-                    <a href="/portfolio/static/files/Jorge.pdf" class="bg-yellow-400 text-black px-4 py-1 rounded-full font-semibold hover:bg-yellow-300 transition shadow-sm text-sm">
+                    <a href="/portfolio/static/files/Jorge.pdf" class="bg-yellow-400 text-black px-4 py-1 rounded-full font-semibold hover:bg-yellow-300 transition shadow-sm text-sm flex items-center gap-2">
+                        <i class="bi bi-download"></i>
                         CV
                     </a>
                 </li>
