@@ -2,7 +2,7 @@ const { markup, Component, xml } = owl;
 
 export class About extends Component {
     static template = xml`
-    <section id="about" class="bg-white py-20 px-6">
+    <section id="about" class="bg-white py-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             <!-- Columna izquierda -->

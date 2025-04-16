@@ -29,12 +29,12 @@ export class Footer extends Component {
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/jorgealqs/" target="_blank" class="hover:text-yellow-500 transition">
-                            <i class="bi bi-linkedin mr-2"></i> /jorquiroz
+                            <i class="bi bi-linkedin mr-2"></i> /jorgealqs
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/jorgealqs" target="_blank" class="hover:text-yellow-500 transition">
-                            <i class="bi bi-github mr-2"></i> /jorquiroz
+                            <i class="bi bi-github mr-2"></i> /jorgealqs
                         </a>
                     </li>
                 </ul>

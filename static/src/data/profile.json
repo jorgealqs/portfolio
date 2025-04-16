@@ -20,5 +20,27 @@
     },
     "footer": {
         "tech":"<a href=\"https://www.python.org\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=python\" alt=\"Python\" class=\"h-6\" /><span>Python</span></a><a href=\"https://www.odoo.com\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=odoo\" alt=\"Odoo\" class=\"h-6\" /><span>Odoo</span></a><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=javascript\" alt=\"JavaScript\" class=\"h-6\" /><span>JavaScript</span></a><a href=\"https://www.postgresql.org\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=postgres\" alt=\"PostgreSQL\" class=\"h-6\" /><span>PostgreSQL</span></a><a href=\"https://www.docker.com\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=docker\" alt=\"Docker\" class=\"h-6\" /><span>Docker</span></a><a href=\"https://github.com/odoo/owl\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=owl\" alt=\"OWL\" class=\"h-6\" /><span>OWL</span></a>"
-    }
+    },
+    "projects":[
+        {
+            "title": "Lotteries Forecast",
+            "description": "Módulo en Odoo 17 para analizar resultados de lotería, calcular frecuencias y generar predicciones usando Pandas.",
+            "link": "",
+            "github": "https://github.com/jorgealqs/odoov17-work/tree/master/addons/lotteries",
+            "image": "./static/src/image/lotteries.png"
+        },
+        {
+            "title": "Portfolio Personal",
+            "description": "Mi sitio web profesional hecho con OWL y TailwindCSS.",
+            "link": "https://portfolio-e2sv.vercel.app/#hero",
+            "github": "https://github.com/jorgealqs/portfolio",
+            "image": "./static/src/image/portfolio.png"
+        },
+        {
+            "title": "Sports Metrics",
+            "description": "Sistema de métricas deportivas en Odoo 17 para seguimiento de ligas, resultados y generación de apuestas informadas con datos de una API externa.",
+            "link": "",
+            "github": "https://github.com/jorgealqs/odoov17-work/tree/master/addons/sports_betting"
+        }
+    ]
 }

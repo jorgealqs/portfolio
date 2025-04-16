@@ -13,36 +13,19 @@ export class Root extends Component {
     static template = xml`
         <div t-if="state.profile">
             <Navbar name="state.profile.name"/>
-            <div class="pt-14">
+            <div class="pt-14 max-w-6xl mx-auto">
                 <div id="hero"><Hero hero="state.profile.hero"/></div>
                 <div id="about"><About about="state.profile.aboutMe"/></div>
-                <div id="projects"><Projects projects="state.projects"/></div>
+                <div id="projects"><Projects projects="state.profile.projects"/></div>
                 <div id="Contact"><Contact contact="state.profile.contact"/></div>
-                <Footer name="state.profile.name" tech="state.profile.footer"/>
             </div>
+            <Footer name="state.profile.name" tech="state.profile.footer"/>
         </div>
     `;
 
     setup() {
         this.state = useState({
-            profile: null,
-            projects: [
-                {
-                    title: "Portfolio Personal",
-                    description: "Mi sitio web profesional hecho con OWL y TailwindCSS.",
-                    link: "https://miportfolio.com"
-                },
-                {
-                    title: "App de Tareas",
-                    description: "Gestor de tareas fullstack con Odoo y Vue.",
-                    link: "https://github.com/jorge/app-tareas"
-                },
-                {
-                    title: "Clon de Netflix",
-                    description: "Una app con streaming y login usando Firebase.",
-                    link: "https://github.com/jorge/netflix-clone"
-                },
-            ]
+            profile: null
         });
 
         onWillStart(async () => {
