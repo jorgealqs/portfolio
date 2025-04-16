@@ -4,7 +4,9 @@ export class Navbar extends Component {
     static template = xml`
     <nav class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300" t-att-class="state.scrolled ? 'py-2' : 'py-4'">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300">
-            <a href="#" class="text-2xl font-bold text-yellow-500 transition-all duration-300">JorgeDev</a>
+            <a href="#" class="text-2xl font-bold text-yellow-500 transition-all duration-300">
+                <t t-esc="props.name"/>
+            </a>
 
             <button class="md:hidden text-gray-700 focus:outline-none" t-on-click="toggleMenu">
                 <i class="bi" t-att-class="state.showMenu ? 'bi-x' : 'bi-list'" style="font-size: 1.5rem;"></i>
@@ -34,6 +36,10 @@ export class Navbar extends Component {
         </div>
     </nav>
     `;
+
+    static props = {
+        name: String,
+    };
 
     setup() {
         this.state = useState({

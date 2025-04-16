@@ -1,0 +1,24 @@
+{
+    "name": "JorgeDev✨",
+    "hero": {
+        "title": "Hola 👋, Soy <span class=\"font-semibold text-yellow-500\">Jorge Alberto Quiroz</span>",
+        "subtitle": "Ingeniero de sistemas con sólida experiencia en desarrollo web, especializado en <span class=\"font-semibold text-yellow-500\">Python 🐍 y experto en Odoo ERP 📦.</span> Me apasiona resolver problemas complejos con código limpio y eficiente. Ayudo a empresas a automatizar y escalar sus procesos con tecnología eficiente, limpia y bien documentada. Domino PostgreSQL, Docker y despliegue en la nube ☁️ para entregar soluciones robustas, escalables y alineadas al negocio.",
+        "image": "/portfolio/static/image/foto.jpg",
+        "file": "/portfolio/static/files/Jorge.pdf"
+    },
+    "aboutMe": {
+        "title": "Desarrollador Fullstack | Especialista en <span class=\"font-semibold text-yellow-500\">Odoo ERP y Python 🐍</span>",
+        "subtitle": "<p class=\"text-lg leading-relaxed text-gray-700 mb-4\">Tengo una fuerte vocación tecnológica y más de <span class=\"text-yellow-500 font-semibold\">6 años de experiencia</span> en el desarrollo de software empresarial. Me especializo en <span class=\"text-yellow-500 font-semibold\">Odoo ERP</span>, <span class=\"text-yellow-500 font-semibold\">Python</span> y soluciones backend eficientes.</p><p class=\"text-lg leading-relaxed text-gray-700 mb-4\">He trabajado en la implementación de sistemas a medida para pymes, automatizando procesos clave como ventas, inventario, compras y contabilidad. Mi enfoque se basa en entender a fondo las necesidades del cliente para ofrecer soluciones simples, escalables y mantenibles.</p><p class=\"text-lg leading-relaxed text-gray-700\">Soy autodidacta, detallista y disfruto resolver problemas complejos con código limpio. Me apasiona seguir aprendiendo y colaborar en proyectos donde la tecnología haga una verdadera diferencia.</p>",
+        "tech":"<img src=\"https://skillicons.dev/icons?i=python,javascript,typescript,html,css,php\"/><img src=\"https://skillicons.dev/icons?i=mysql,postgres,git,docker,linux,postman,vscode\"/>"
+    },
+    "contact":{
+        "whatsapp": "https://wa.me/3193662738?text=Me%20gustaría%20contactarte%20sobre%20un%20proyecto",
+        "github": "https://github.com/jorgealqs",
+        "linkedin": "https://www.linkedin.com/in/jorgealqs",
+        "email": "mailto:joralquisi@hotmail.com",
+        "all": "<a href=\"https://wa.me/3193662738?text=Me%20gustaría%20contactarte%20sobre%20un%20proyecto\" target=\"_blank\" class=\"hover:text-yellow-600 transition transform hover:scale-110\" title=\"WhatsApp\"><i class=\"bi bi-whatsapp\"></i></a><a href=\"https://github.com/jorgealqs\" target=\"_blank\" class=\"hover:text-yellow-600 transition transform hover:scale-110\" title=\"GitHub\"><i class=\"bi bi-github\"></i></a><a href=\"https://www.linkedin.com/in/jorgealqs\" target=\"_blank\" class=\"hover:text-yellow-600 transition transform hover:scale-110\" title=\"LinkedIn\"><i class=\"bi bi-linkedin\"></i></a>"
+    },
+    "footer": {
+        "tech":"<a href=\"https://www.python.org\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=python\" alt=\"Python\" class=\"h-6\" /><span>Python</span></a><a href=\"https://www.odoo.com\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=odoo\" alt=\"Odoo\" class=\"h-6\" /><span>Odoo</span></a><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=javascript\" alt=\"JavaScript\" class=\"h-6\" /><span>JavaScript</span></a><a href=\"https://www.postgresql.org\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=postgres\" alt=\"PostgreSQL\" class=\"h-6\" /><span>PostgreSQL</span></a><a href=\"https://www.docker.com\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=docker\" alt=\"Docker\" class=\"h-6\" /><span>Docker</span></a><a href=\"https://github.com/odoo/owl\" target=\"_blank\" class=\"flex items-center space-x-2 hover:text-yellow-500 transition\"><img src=\"https://skillicons.dev/icons?i=owl\" alt=\"OWL\" class=\"h-6\" /><span>OWL</span></a>"
+    }
+}

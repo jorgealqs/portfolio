@@ -1,4 +1,4 @@
-const { Component, xml } = owl;
+const { markup, Component, xml } = owl;
 
 export class Footer extends Component {
     static template = xml`
@@ -8,7 +8,9 @@ export class Footer extends Component {
             <!-- Columna 1: Marca -->
             <div class="flex items-center space-x-3">
                 <i class="bi bi-code-slash text-yellow-500 text-xl"></i>
-                <span class="text-lg font-bold text-gray-800">JorgeDev</span>
+                <span class="text-2xl font-bold text-yellow-500 transition-all duration-300">
+                    <t t-esc="props.name"/>
+                </span>
             </div>
 
             <!-- Columna 2: Contacto -->
@@ -42,33 +44,23 @@ export class Footer extends Component {
             <div>
                 <h3 class="text-gray-800 font-semibold mb-4">Tecnologías</h3>
                 <div class="grid grid-cols-2 gap-3">
-                    <a href="https://www.python.org" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=python" alt="Python" class="h-6" />
-                        <span>Python</span>
-                    </a>
-                    <a href="https://www.odoo.com" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=odoo" alt="Odoo" class="h-6" />
-                        <span>Odoo</span>
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="h-6" />
-                        <span>JavaScript</span>
-                    </a>
-                    <a href="https://www.postgresql.org" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="h-6" />
-                        <span>PostgreSQL</span>
-                    </a>
-                    <a href="https://www.docker.com" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="h-6" />
-                        <span>Docker</span>
-                    </a>
-                    <a href="https://github.com/odoo/owl" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500 transition">
-                        <img src="https://skillicons.dev/icons?i=owl" alt="OWL" class="h-6" />
-                        <span>OWL</span>
-                    </a>
+                    <t t-out="footer.tech"/>
                 </div>
             </div>
         </div>
     </footer>
     `;
+
+    static props = {
+        name: String,
+        tech: Object,
+    }
+
+    setup(){
+        this.footer = {
+            ...this.props.tech,
+            tech: markup(this.props.tech.tech)
+        };
+
+    }
 }
